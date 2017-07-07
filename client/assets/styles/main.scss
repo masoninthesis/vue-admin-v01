@@ -1,0 +1,36 @@
+// Custom Bootstrap Replacements
+
+// Global
+html {
+  background-color: white!important;
+}
+.footer {
+  background-color: white;
+}
+
+// Components
+// Buttons
+.btn:focus {
+  box-shadow: none!important;
+}
+// Cards
+.card {
+  box-shadow: 0 15px 35px rgba(50,50,93,.05), 0 5px 15px rgba(0,0,0,.05)!important;
+}
+
+// NavBar
+.app-navbar {
+  box-shadow: none;
+}
+
+#icons {
+  @import "./././node_modules/bootstrap/scss/bootstrap";
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .col-sm {
+      width: 100%;
+    }
+  }
+}
