@@ -9,6 +9,14 @@ export default {
 
   children: [
     {
+      name: 'Tasks',
+      path: '/icons',
+      meta: {
+        link: 'ui/Icons.vue'
+      },
+      component: lazyLoading('ui/Icons')
+    },
+    {
       name: 'Buttons',
       path: '/buttons',
       meta: {
@@ -31,14 +39,6 @@ export default {
         link: 'ui/Typography.vue'
       },
       component: lazyLoading('ui/Typography')
-    },
-    {
-      name: 'Icons',
-      path: '/icons',
-      meta: {
-        link: 'ui/Icons.vue'
-      },
-      component: lazyLoading('ui/Icons')
     }
   ]
 }

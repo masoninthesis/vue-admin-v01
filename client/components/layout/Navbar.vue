@@ -12,14 +12,17 @@
             <img src="~assets/logo.svg" :alt="pkginfo.description">
             <!-- <tooltip :label="'v' + pkginfo.version" placement="right" type="success" size="small" :no-animate="true" :always="true" :rounded="true"> -->
               <div class="hidden-sm-down">
-                <span class="vue">Vue</span><strong class="admin">Admin</strong>
+                <span class="vue">Vue</span><strong class="admin">Tasks</strong>
               </div>
             <!-- </tooltip> -->
           </a>
         </div>
         <div class="nav-right is-flex">
-          <router-link v-if="!$auth.check()" to="/login" class="nav-item">Login</router-link>
-          <a v-if="$auth.check()" @click="logout" class="nav-item">Logout</a>
+          <div class="flex-c-c">
+            <i class="mdi mdi-account-circle"></i>
+            <router-link v-if="!$auth.check()" to="/login" class="nav-item">Login</router-link>
+            <a v-if="$auth.check()" @click="logout" class="nav-item">Logout</a>
+          </div>
         </div>
       </nav>
     </div>

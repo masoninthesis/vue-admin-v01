@@ -1,10 +1,9 @@
+@import "./bulma";
 @import "./bootstrap";
 @import "./variables";
-@import "./bulma";
-@import '~bulma';
+@import "./mixins";
 
 @import "./global";
-
 
 // Global
 html {
@@ -14,32 +13,38 @@ html {
   background-color: white;
 }
 
-// Components
-// Buttons
-.btn:focus {
-  box-shadow: none!important;
-}
-.btn-primary {
-  background-color: $brand-primary!important;
-}
-
-// Cards
-.card {
-  box-shadow: 0 15px 35px rgba(50,50,93,.05), 0 5px 15px rgba(0,0,0,.05)!important;
-}
-
-// NavBar
-.app-navbar {
-  box-shadow: none;
-}
-
 #icons {
   .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     .col-sm {
       width: 100%;
+    }
+  }
+
+  // UI
+  .mdi-check {
+    border: 1px solid white;
+    padding: 2px 6px;
+    border-radius: 14px;
+    transition: all .5s ease;
+    &:hover {
+      border: 1px solid $accent;
+    }
+  }
+  .mdi-brightness-1 {
+
+  }
+  #item {
+    .card-header {
+      .close {
+        margin-top: -3px;
+      }
+    }
+    span.comment {
+      padding: 20px 20px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      &:last-of-type {
+        border-bottom: none!important;
+      }
     }
   }
 }

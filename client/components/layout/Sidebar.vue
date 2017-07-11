@@ -175,6 +175,9 @@ export default {
           transform: rotate(180deg);
         }
       }
+      &:hover {
+        text-decoration: none;
+      }
     }
 
     li a + ul {
