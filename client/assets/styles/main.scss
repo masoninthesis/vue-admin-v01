@@ -1,4 +1,10 @@
-// Custom Bootstrap Replacements
+@import "./bootstrap";
+@import "./variables";
+@import "./bulma";
+@import '~bulma';
+
+@import "./global";
+
 
 // Global
 html {
@@ -13,6 +19,10 @@ html {
 .btn:focus {
   box-shadow: none!important;
 }
+.btn-primary {
+  background-color: $brand-primary!important;
+}
+
 // Cards
 .card {
   box-shadow: 0 15px 35px rgba(50,50,93,.05), 0 5px 15px rgba(0,0,0,.05)!important;
@@ -24,7 +34,6 @@ html {
 }
 
 #icons {
-  @import "./././node_modules/bootstrap/scss/bootstrap";
   .row {
     display: flex;
     justify-content: space-between;

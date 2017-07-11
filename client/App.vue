@@ -55,23 +55,16 @@ export default {
 </script>
 
 <style lang="scss">
+@import './assets/styles/main.scss';
+
 @import '~animate.css';
 .animated {
   animation-duration: .377s;
 }
 
-@import '~bulma';
+// @import '~wysiwyg.css/wysiwyg.sass';
 
-@import '~wysiwyg.css/wysiwyg.sass';
-
-$fa-font-path: '~font-awesome/fonts/';
 @import '~font-awesome/scss/font-awesome';
-
-@import './assets/styles/main.scss';
-
-html {
-  background-color: whitesmoke;
-}
 
 .nprogress-container {
   position: fixed !important;

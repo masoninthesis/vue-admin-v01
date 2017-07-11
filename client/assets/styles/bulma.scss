@@ -1,0 +1,87 @@
+// Variables
+$primary:               #7a7a7a;
+$primary-hover:         #363636;
+$accent:                #00d1b2;
+
+// Styles
+.nav-item {
+  align-items: center;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 1rem;
+  justify-content: center;
+  padding: 0.5rem 0.75rem;
+  img {
+    max-height: 1.75rem;
+  }
+  .button + .button {
+    margin-left: 0.75rem;
+  }
+  .tag:first-child {
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+    &:not(:first-child) {
+      margin-left: 0.5rem;
+    }
+  }
+  a {
+    flex-grow: 1;
+    flex-shrink: 0;
+    color: $primary;
+    &:hover, &.is-active {
+      color: $primary-hover;
+    }
+    &.is-tab {
+      border-bottom: 1px solid transparent;
+      border-top: 1px solid transparent;
+      padding-bottom: calc(0.5rem - 1px);
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: calc(0.5rem - 1px);
+      &:hover {
+        border-bottom-color: $accent;
+        border-top-color: transparent;
+      }
+      .is-active {
+        border-bottom: 3px solid $accent;
+        color: $accent;
+        padding-bottom: calc(0.5rem - 3px);
+      }
+    }
+  }
+}
+
+// Media Queries
+@media screen and (max-width: 768px) {
+  .nav-item {
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nav-item a.is-brand,
+  a.nav-item.is-brand {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    background-color: white;
+    box-shadow: 0 4px 7px rgba(10, 10, 10, 0.1);
+    left: 0;
+    display: none;
+    right: 0;
+    top: 100%;
+    position: absolute;
+    .nav-item {
+      border-top: 1px solid rgba(219, 219, 219, 0.5);
+      padding: 0.75rem;
+      &.is-active {
+        display: block;
+      }
+    }
+  }
+}
