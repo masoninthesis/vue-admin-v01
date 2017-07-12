@@ -1,16 +1,10 @@
 // @import '~bulma';
-@import "./././node_modules/bulma-scss/bulma.scss";
+@import "../././node_modules/bulma-scss/bulma.scss";
 
 // Variables
 $primary:               #7a7a7a;
 $primary-hover:         #363636;
 $accent:                #00d1b2;
-
-
-// Typo
-.is-active {
-  color: $accent;
-}
 
 // Connections
 .card {

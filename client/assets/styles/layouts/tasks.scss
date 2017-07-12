@@ -1,0 +1,151 @@
+@import "../common/variables";
+
+
+// List styles - might move this to global eventually
+.list-group {
+  margin: -1px 1px -1px;
+  border-radius: 0;
+  .list-group-item {
+    border: none;
+    transition: all .5s ease;
+    border-left: 2px solid white;
+    border-bottom-left-radius: 0!important;
+    border-top-left-radius: 0!important;
+    &:hover, &.is-active {
+      border-left: 2px solid $accent;
+    }
+  }
+}
+.mdi {
+  margin-bottom: -2px;
+}
+
+// Bullets
+.mdi-brightness-1 {
+  &.success {
+    color: $success;
+    &:hover {
+      color: $success-hover;
+    }
+  }
+  &.warning {
+    color: $warning;
+    &:hover {
+      color: $warning-hover;
+    }
+  }
+  &.danger {
+    color: $danger;
+    &:hover {
+      color: $danger-hover;
+    }
+  }
+}
+
+#icons {
+  .row {
+    .col-sm {
+      width: 100%;
+    }
+  }
+  #item-list {
+    .card-header {
+      .mdi-plus {
+        font-size: 20px;
+        color: $accent;
+      }
+    }
+    .card-block {
+      .mdi-check {
+        border: 1px solid white;
+        padding: 2px 6px;
+        border-radius: 14px;
+        transition: all .5s ease;
+        &:hover {
+          border: 1px solid $accent;
+        }
+      }
+      .is-active {
+        color: $accent;
+        .mdi-check {
+          border-color: $accent;
+        }
+      }
+    }
+  }
+  #item {
+    .card {
+      border: 1px solid $accent;
+      .card-header {
+        background-image: none;
+        color: $accent;
+        .mdi-check {
+          border: 1px solid $light-bg;
+          padding: 2px 6px;
+          border-radius: 14px;
+          transition: all .5s ease;
+          &:hover {
+            color: $accent;
+            border: 1px solid $accent;
+          }
+        }
+        .close {
+          margin-top: -3px;
+        }
+      }
+      .card-block {
+        .team {
+          .assigned {
+            height: 36px;
+            width: 36px;
+            border-radius: 36px;
+            border: 1px solid $success;
+            text-align: center;
+            padding-top: 7px;
+          }
+        }
+        .flatpickr {
+          margin-bottom: 0;
+        }
+        .comment-group {
+          .comment {
+            padding: 20px 20px;
+            border-bottom: 1px solid $light-bg;
+            &:last-child {
+              border-bottom: none!important;
+            }
+            .progress {
+              height: .2rem;
+              margin: .75rem 0 0;
+              .progress-bar {
+                background-color: $accent;
+              }
+            }
+            p {
+              margin: 1rem 1rem 0 0;
+              color: $mute;
+            }
+            .placeholder-img {
+              height: 100px;
+              max-width: 100%;
+              background-color: $light-bg;
+              border-radius: 4px;
+            }
+          }
+        }
+        .checklist {
+          .checklist-items {
+            .form-check {
+              &-input {
+                margin-right: .5rem;
+              }
+            }
+          }
+        }
+      }
+      .card-footer {
+        border-top: none;
+      }
+    }
+  }
+}

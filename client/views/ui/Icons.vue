@@ -6,54 +6,67 @@
           <div id="item-list" class="col-sm" v-show="show2a">
             <div class="card">
               <div class="card-header flex-s-b">
-              <!-- <Component2a></Component2a> --> Component2a
+              <!-- <Component2a></Component2a> -->
+              <span>Component2a</span>
+              <i class="mdi mdi-plus"></i>
               </div>
               <ul class="list-group">
                 <li class="list-group-item flex-s-b is-active" @click="show2b = !show2b">
                   <div class="flex-c-c">
                     <i class="mdi mdi-check mr-3"></i>
-                    List item #1
+                    Complete Item Card
                   </div>
                   <div class="flex-c-c">
                     <span class="badge badge-default">Unicorn smasher</span>
-                    <i class="mdi mdi-brightness-1 ml-3"></i>
+                    <!-- <i class="mdi mdi-brightness-1 danger ml-3"></i> -->
+                    <small class="ml-2 text-muted">Due in 2 days</small>
                   </div>
                 </li>
                 <li class="list-group-item flex-s-b" @click="show2b = !show2b">
                   <div class="flex-c-c">
                     <i class="mdi mdi-check mr-3"></i>
-                    List item #2
+                    Break Into Components
                   </div>
                   <div class="flex-c-c">
                     <span class="badge badge-default">AMZ Tracker</span>
-                    <i class="mdi mdi-brightness-1 ml-3"></i>
+                    <!-- <i class="mdi mdi-brightness-1 success ml-3"></i> -->
+                    <small class="ml-2 text-muted">Due in 2 days</small>
                   </div>
                 </li>
                 <li class="list-group-item flex-s-b" @click="show2b = !show2b">
                   <div class="flex-c-c">
                     <i class="mdi mdi-check mr-3"></i>
-                    List item #3
+                    Style and Fixup Sidebar
+                  </div>
+                  <div class="flex-c-c">
+                    <span class="badge badge-default">AMZ Tracker</span>
+                    <!-- <i class="mdi mdi-brightness-1 warning ml-3"></i> -->
+                    <small class="ml-2 text-muted">Due in 2 days</small>
+                  </div>
+                </li>
+                <li class="list-group-item flex-s-b" @click="show2b = !show2b">
+                  <div class="flex-c-c">
+                    <i class="mdi mdi-check mr-3"></i>
+                    Branch Repository
+                  </div>
+                  <div class="flex-c-c">
+                    <span class="badge badge-default">AMZ Tracker</span>
+                    <!-- <i class="mdi mdi-brightness-1 danger ml-3"></i> -->
+                    <small class="ml-2 text-muted">Due in 2 days</small>
+                  </div>
+                </li>
+                <li class="list-group-item flex-s-b" @click="show2b = !show2b">
+                  <div class="flex-c-c">
+                    <i class="mdi mdi-check mr-3"></i>
+                    Cleanup for Prototype Demo
                   </div>
                   <div class="flex-c-c">
                     <span class="badge badge-default">Unicorn Smasher</span>
-                    <i class="mdi mdi-brightness-1 ml-3"></i>
+                    <!-- <i class="mdi mdi-brightness-1 warning ml-3"></i> -->
+                    <small class="ml-2 text-muted">Due in 2 days</small>
                   </div>
                 </li>
               </ul>
-              <!-- <table class="table is-striped">
-                <thead>
-                  <tr>
-                    <th>th 1</th>
-                    <th>th 2</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>td 1</td>
-                    <td>td 2</td>
-                  </tr>
-                </tbody>
-              </table> -->
             </div>
           </div>
       </transition>
@@ -63,26 +76,105 @@
             <div class="card">
               <div class="card-header flex-s-b">
                 <div class="flex-c-c">
-                  <i class="fa fa-check mr-3"></i>
-                  <div class="">Component2b</div>
+                  <i class="mdi mdi-check mr-3"></i>
+
                 </div>
-                <div class="flex-c-c">
-                  <i class="mdi mdi-brightness-1 mr-3"></i>
-                  <button type="button" class="close" @click="show2b = !show2b"><span>&times;</span></button>
-                </div>
+                <div class="">Component2b</div>
+                <button type="button" class="close" @click="show2b = !show2b"><i class="mdi mdi-close"></i></button>
               </div>
               <div class="card-block">
-                <datepicker :inputClass="{ test: true }" :config="{ wrap: true, disable: [ { from: '2016-07-06', to: '2016-07-09' }, '2016-07-24' ], minDate: 'today' }" readonly>
-                  <a class="button" data-toggle><i class="fa fa-calendar"></i></a>
-                  <a class="button" data-clear><i class="fa fa-close"></i></a>
-                </datepicker>
-                <span class="row comment">Example comments go here</span>
-                <span class="row comment">Example comments go here</span>
-                <span class="row comment">Example comments go here</span>
+                <div class="flex-s-b pl-3">
+                  <div class="team">
+                    <div class="assigned">ML</div>
+                  </div>
+                  <datepicker :inputClass="{ test: true }" :config="{ wrap: true, disable: [ { from: '2016-07-06', to: '2016-07-09' }, '2016-07-24' ], minDate: 'today' }" readonly>
+                    <a class="button" data-toggle><i class="fa fa-calendar"></i></a>
+                    <a class="button" data-clear><i class="fa fa-close"></i></a>
+                  </datepicker>
+                </div>
+                <div class="comment-group">
+                  <div class="comment checklist">
+                    <div class="flex-s-b">
+                      <div class="flex-c-c">
+                        <i class="mdi mdi-check-all mr-3"></i>
+                        <span>Checklist</span>
+                      </div>
+                      <small class="text-muted">June 4th, 2017 <em>at</em> 6:44pm</small>
+                    </div>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="m-4 checklist-items">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" checked>
+                          Check me out
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" checked>
+                          Check me out
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" checked>
+                          Check me out
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input" checked>
+                          Check me out
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input type="checkbox" class="form-check-input">
+                          Check me out
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="comment">
+                    <div class="flex-s-b">
+                      <div class="flex-c-c">
+                        <i class="mdi mdi-comment-outline mr-3"></i>
+                        <span>Bullet Colors</span>
+                      </div>
+                      <small class="text-muted">June 4th, 2017 <em>at</em> 6:44pm</small>
+                    </div>
+                    <p>Comment goes here..</p>
+                  </div>
+                  <div class="comment">
+                    <div class="flex-s-b">
+                      <div class="flex-c-c">
+                        <i class="mdi mdi-attachment mr-3"></i>
+                        <span>Attach files</span>
+                      </div>
+                      <small class="text-muted">June 5th, 2017 <em>at</em> 10:12am</small>
+                    </div>
+                    <div class="placeholder-img flex-c-c mute">img.png</div>
+                  </div>
+                  <div class="comment">
+                    <div class="flex-s-b">
+                      <div class="flex-c-c">
+                        <i class="mdi mdi-account-convert mr-3"></i>
+                        <span>Assign People</span>
+                      </div>
+                      <small class="text-muted">June 5th, 2017 <em>at</em> 5:23pm</small>
+                    </div>
+                  </div>
+                </div>
                 <div class="form-group">
                   <label class="sr-only" for="commentsTextarea">Comments</label>
-                  <textarea class="form-control" id="commentsTextarea" rows="5"></textarea>
+                  <textarea palceholder="Write a comment.." class="form-control" id="commentsTextarea" rows="5"></textarea>
+                  <button class="btn btn-primary btn-md mt-5" name="button">Submit</button>
                 </div>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted mx-auto"><em>Created June 1st, 2017</em></small>
               </div>
             </div>
           </div>

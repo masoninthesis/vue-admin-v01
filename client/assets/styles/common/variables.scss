@@ -1,0 +1,24 @@
+// Variables
+// Vue-Admin
+$fa-font-path:    '~font-awesome/fonts/';
+
+// Custom
+$brand-primary:                slateblue;
+
+$light-bg:                       #f7f7f9;
+$dark-bg:                        #3d3d3d;
+
+$mute:       rgba(0, 0, 0, .3)!important;
+
+// Bulma Variables
+$primary:                      slateblue;
+$accent:                         #00d1b2;
+$success:                        #23d160;
+$warning:                        #ffdd57;
+$danger:                         #ff3860;
+
+$primary-hover:   darken($primary, 10% );
+$accent-hover:     darken($accent, 10% );
+$success-hover:   darken($success, 10% );
+$warning-hover:   darken($warning, 10% );
+$danger-hover:     darken($danger, 10% );

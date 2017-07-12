@@ -147,7 +147,7 @@ export default {
   max-height: 100vh;
   height: calc(100% - 50px);
   z-index: 1024 - 1;
-  background: white;
+  background: transparent;
   overflow-y: auto;
   overflow-x: hidden;
 

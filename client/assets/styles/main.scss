@@ -1,50 +1,24 @@
-@import "./bulma";
-@import "./bootstrap";
-@import "./variables";
-@import "./mixins";
+@import "./common/bulma";
+@import "./common/bootstrap";
+@import "./common/variables";
+@import "./common/mixins";
 
-@import "./global";
+@import "./common/global";
+
+@import "./layouts/tasks";
 
 // Global
 html {
   background-color: white!important;
 }
+a {
+  color: $accent;
+  transition: all .5s ease;
+  &:hover {
+    color: $brand-primary;
+    text-decoration: none;
+  }
+}
 .footer {
   background-color: white;
-}
-
-#icons {
-  .row {
-    .col-sm {
-      width: 100%;
-    }
-  }
-
-  // UI
-  .mdi-check {
-    border: 1px solid white;
-    padding: 2px 6px;
-    border-radius: 14px;
-    transition: all .5s ease;
-    &:hover {
-      border: 1px solid $accent;
-    }
-  }
-  .mdi-brightness-1 {
-
-  }
-  #item {
-    .card-header {
-      .close {
-        margin-top: -3px;
-      }
-    }
-    span.comment {
-      padding: 20px 20px;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      &:last-of-type {
-        border-bottom: none!important;
-      }
-    }
-  }
 }

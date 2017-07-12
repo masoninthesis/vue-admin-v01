@@ -68,7 +68,7 @@ export default {
 
 <style lang="scss">
   @import '~bulma/sass/utilities/variables';
-  @import '../../assets/styles/variables';
+  @import '../../assets/styles/common/variables';
 
   .app-navbar {
     background-color: $brand-primary;
