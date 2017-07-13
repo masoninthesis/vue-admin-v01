@@ -4,20 +4,7 @@ $mdi-font-path: '~mdi/fonts/';
 @import "~mdi/scss/materialdesignicons.scss";
 
 // List styles - might move this to global eventually
-.list-group {
-  margin: -1px 1px -1px;
-  border-radius: 0;
-  .list-group-item {
-    border: none;
-    transition: all .5s ease;
-    border-left: 2px solid white;
-    border-bottom-left-radius: 0!important;
-    border-top-left-radius: 0!important;
-    &:hover, &.is-active {
-      border-left: 2px solid $accent;
-    }
-  }
-}
+
 .mdi {
   margin-bottom: -2px;
 }
@@ -57,20 +44,44 @@ $mdi-font-path: '~mdi/fonts/';
         color: $accent;
       }
     }
-    .card-block {
-      .mdi-check {
-        border: 1px solid white;
-        padding: 2px 6px;
-        border-radius: 14px;
-        transition: all .5s ease;
-        &:hover {
-          border: 1px solid $accent;
-        }
-      }
-      .is-active {
-        color: $accent;
-        .mdi-check {
-          border-color: $accent;
+    .card-body {
+      .list-group {
+        margin: -1px 1px -1px;
+        border-radius: 0;
+        .list-group-item {
+          border: none;
+          transition: all .5s ease;
+          border-left: 2px solid white;
+          border-bottom-left-radius: 0!important;
+          border-top-left-radius: 0!important;
+          &:hover {
+            border-left: 2px solid $accent;
+            .mdi-drag-vertical {
+              color: $mute;
+            }
+          }
+          &.is-active {
+            color: $accent;
+            border-left: 2px solid $accent;
+            .mdi-check {
+              border-color: $accent;
+            }
+          }
+          .mdi {
+            &-drag-vertical {
+              color: white;
+              transition: color .5s ease;
+            }
+            &-check {
+              border: 1px solid white;
+              padding: 2px 6px;
+              border-radius: 14px;
+              transition: all .5s ease;
+              &:hover {
+                border: 1px solid $accent;
+              }
+            }
+          }
         }
       }
     }
