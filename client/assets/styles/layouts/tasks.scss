@@ -1,5 +1,7 @@
 @import "../common/variables";
 
+$mdi-font-path: '~mdi/fonts/';
+@import "~mdi/scss/materialdesignicons.scss";
 
 // List styles - might move this to global eventually
 .list-group {
@@ -48,7 +50,7 @@
       width: 100%;
     }
   }
-  #item-list {
+  #task-list {
     .card-header {
       .mdi-plus {
         font-size: 20px;
@@ -73,10 +75,11 @@
       }
     }
   }
-  #item {
+  #task {
     .card {
       border: 1px solid $accent;
       .card-header {
+        background-color: white;
         background-image: none;
         color: $accent;
         .mdi-check {
@@ -99,9 +102,10 @@
             height: 36px;
             width: 36px;
             border-radius: 36px;
-            border: 1px solid $success;
+            border: 1px solid $accent;
             text-align: center;
-            padding-top: 7px;
+            padding: 6px 0 0 2px;
+            margin: 0 4px 0;
           }
         }
         .flatpickr {
@@ -140,6 +144,26 @@
                 margin-right: .5rem;
               }
             }
+          }
+        }
+        .add {
+          i {
+            background: $accent;
+            border-radius: 14px;
+            margin: 0 0 0 8px;
+            padding: 2px 6px;
+            transition: all .5s ease;
+            &:hover {
+              color: white;
+              background: $accent-hover;
+            }
+          }
+        }
+        .priority {
+          .active {
+            background-color: $accent;
+            border-color: $accent;
+            color: white;
           }
         }
       }

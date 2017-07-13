@@ -1,0 +1,57 @@
+@import "../common/variables";
+
+.app-sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  padding: 20px 18px 50px;
+  width: 180px;
+  min-width: 45px;
+  max-height: 100vh;
+  height: calc(100% - 50px);
+  z-index: 1024 - 1;
+  background: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  @include mobile() {
+    transform: translate3d(-180px, 0, 0);
+  }
+
+  .icon {
+    vertical-align: baseline;
+    &.is-angle {
+      position: absolute;
+      right: 10px;
+      transition: transform .377s ease;
+    }
+  }
+
+  .menu-label {
+    padding-left: 5px;
+  }
+
+  .menu-list {
+    li a {
+      width: 162px;
+      &[aria-expanded="true"] {
+        .is-angle {
+          transform: rotate(180deg);
+        }
+      }
+      &:hover {
+        text-decoration: none;
+      }
+
+    }
+
+    li a + ul {
+      margin: 0 10px 0 15px;
+    }
+    a.is-active {
+      background-color: transparent;
+      color: $accent;
+    }
+  }
+}

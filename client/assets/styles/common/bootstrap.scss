@@ -15,6 +15,22 @@
 .badge {
   font-weight: 100;
   padding: 4px 6px;
+  &-primary {
+    background-color: $accent;
+  }
+  &-secondary {
+    border: 1px solid $light-bg;
+    color: $dark-bg;
+  }
+  &-high {
+    @extend .badge-primary;
+  }
+  &-medium {
+    @extend .badge-default;
+  }
+  &-low {
+    @extend .badge-secondary;
+  }
 }
 
 // Buttons

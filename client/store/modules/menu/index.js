@@ -15,7 +15,7 @@ const state = {
       name: 'Dashboard',
       path: '/dashboard',
       meta: {
-        icon: 'fa-tachometer',
+        icon: 'mdi-earth',
         link: 'dashboard/index.vue'
       },
       component: lazyLoading('dashboard', true)
@@ -25,7 +25,7 @@ const state = {
       path: '/axiosDemo',
       meta: {
         auth: true,
-        icon: 'fa-rocket',
+        icon: 'mdi-rocket',
         link: 'axios/index.vue'
       },
       component: lazyLoading('axios', true)

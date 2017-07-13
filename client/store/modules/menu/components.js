@@ -3,7 +3,7 @@ import lazyLoading from './lazyLoading'
 export default {
   path: '/components',
   meta: {
-    icon: 'fa-building-o',
+    icon: 'mdi-buffer',
     expanded: false,
     label: 'Components'
   },

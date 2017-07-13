@@ -3,7 +3,7 @@ import lazyLoading from './lazyLoading'
 export default {
   meta: {
     label: 'UI Features',
-    icon: 'fa-laptop',
+    icon: 'mdi-nut',
     expanded: false
   },
 

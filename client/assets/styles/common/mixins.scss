@@ -62,3 +62,43 @@
     }
   }
 }
+
+// Animations
+.slide {
+  &-enter {
+    opacity: 0;
+    &-active {
+      animation: slide-in .5s ease-out forwards;
+      transition: all .5s;
+    }
+  }
+}
+
+.slide {
+  &-leave-active {
+    animation: slide-out .5s ease-out forwards;
+    transition: all .5s;
+    opacity: 0;
+  }
+  &-move {
+    transition: all .5s;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(20px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}

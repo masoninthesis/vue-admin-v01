@@ -3,7 +3,7 @@ import lazyLoading from './lazyLoading'
 export default {
   name: 'Tables',
   meta: {
-    icon: 'fa-table',
+    icon: 'mdi-vector-difference',
     expanded: false
   },
 

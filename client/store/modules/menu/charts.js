@@ -4,7 +4,7 @@ export default {
   name: 'Charts',
   path: '/charts',
   meta: {
-    icon: 'fa-bar-chart-o',
+    icon: 'mdi-chart-line',
     expanded: false,
     link: 'charts/index.vue'
   },
