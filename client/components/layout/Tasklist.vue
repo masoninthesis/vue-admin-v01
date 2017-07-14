@@ -22,40 +22,7 @@
             <i class="mdi mdi-plus mr-3"></i>
             <input class="form-control" type="text" placeholder="Write new task here.." value="">
           </div>
-          <!-- <button class="btn btn-accent ml-3" name="button"><i class="mdi mdi-plus mr-1"></i> Add</button> -->
         </li>
-
-        <!-- <li class="list-group-item flex-s-b">
-          <div class="flex-c-c">
-            <i class="mdi mdi-check mr-3"></i>
-            Complete Item Card
-          </div>
-          <div class="flex-c-c">
-            <span class="badge badge-high">High</span>
-            <small class="ml-2 text-muted">Due in 2 days</small>
-          </div>
-        </li> -->
-        <!-- <li class="list-group-item flex-s-b">
-          <div class="flex-c-c">
-            <i class="mdi mdi-check mr-3"></i>
-            Break Into Components
-          </div>
-          <div class="flex-c-c">
-            <span class="badge badge-medium">Medium</span>
-            <small class="ml-2 text-muted">Due in 2 days</small>
-          </div>
-        </li> -->
-        <!-- <li class="list-group-item flex-s-b is-active">
-          <div class="flex-c-c">
-            <i class="mdi mdi-check mr-3"></i>
-            Style and Fixup Sidebar
-          </div>
-          <div class="flex-c-c">
-            <span class="badge badge-high">High</span>
-            <small class="ml-2 text-muted">Due in 2 days</small>
-          </div>
-        </li> -->
-
       </ul>
     </div>
   </div>
