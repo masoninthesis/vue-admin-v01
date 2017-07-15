@@ -1,17 +1,13 @@
 <template>
   <div class="content has-text-centered">
-    <p>
-      <img width="200" src="~assets/logo.svg" :alt="description">
-    </p>
 
-    <h1 class="is-title is-bold">{{ name.replace('-', ' ') }}</h1>
+    <h1 class="is-title is-bold">Vue Tasks</h1>
 
     <p>
-      <strong>{{ description }}</strong>,
-      <a :href="homepage">Live Demo</a>
+      <strong>{{ description }}</strong>
     </p>
 
-    <p>Supports Vue 2.0 and Bulma 0.3!</p>
+    <p>Supports Vue 2.0 Bootstrap 4 (alpha6), and Bulma 0.3!</p>
   </div>
 </template>
 

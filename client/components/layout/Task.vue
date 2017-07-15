@@ -4,65 +4,30 @@
       <div class="flex-c-c">
         <i class="mdi mdi-check mr-3"></i>
       </div>
-      <div class="">Complete Item Card</div>
-      <button type="button" class="close" @click="show2b = !show2b"><i class="mdi mdi-close"></i></button>
+      <div class="options mr-2">
+        <i class="mdi mdi-account-convert"></i>
+        <i class="mdi mdi-attachment"></i>
+        <i class="mdi mdi-dots-horizontal"></i>
+      </div>
+      <div class="flex-c-c">
+        <button type="button" class="close" @click="show2b = !show2b"><i class="mdi mdi-close"></i></button>
+      </div>
     </div>
     <div class="card-block">
       <div class="flex-s-b pl-3">
         <div class="team flex-c-c">
           <div class="assigned">ML</div>
-          <div class="assigned">JG</div>
         </div>
         <datepicker :inputClass="{ test: true }" :config="{ wrap: true, disable: [ { from: '2016-07-06', to: '2016-07-09' }, '2016-07-24' ], minDate: 'today' }" readonly>
           <a class="button" data-toggle><i class="mdi mdi-calendar"></i></a>
           <a class="button" data-clear><i class="mdi mdi-close"></i></a>
         </datepicker>
       </div>
+      <div class="task-title">
+        <h2>Pass data between components</h2>
+        <p @dblclick=" renameName() "><small>Description..</small></p>
+      </div>
       <div class="comment-group">
-        <!-- <div class="comment checklist">
-          <div class="flex-s-b">
-            <div class="flex-c-c">
-              <i class="mdi mdi-check-all mr-3"></i>
-              <span>Checklist</span>
-            </div>
-            <small class="text-muted">June 4th, 2017 <em>at</em> 6:44pm</small>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <div class="m-4 checklist-items">
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" checked>
-                Check me out
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" checked>
-                Check me out
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" checked>
-                Check me out
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" checked>
-                Check me out
-              </label>
-            </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="checkbox" class="form-check-input">
-                Check me out
-              </label>
-            </div>
-          </div>
-        </div> -->
         <div class="comment">
           <div class="flex-s-b">
             <div class="flex-c-c">
@@ -99,8 +64,6 @@
         <div class="flex-s-b mt-4">
           <div class="add flex-c-c">
             <button class="btn btn-primary mr-2" name="button">Submit</button>
-            <i class="mdi mdi-attachment"></i>
-            <i class="mdi mdi-account-plus"></i>
           </div>
           <div class="btn-group priority flex-c-c" data-toggle="buttons">
             <label class="btn btn-sm btn-secondary">
@@ -128,11 +91,6 @@
   export default {
     components: {
       Datepicker
-    },
-    data () {
-      return {
-        value: '2016-12-12'
-      }
     },
     computed: {
       today () {

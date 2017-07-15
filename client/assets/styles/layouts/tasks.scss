@@ -103,8 +103,20 @@ $mdi-font-path: '~mdi/fonts/';
             border: 1px solid $accent;
           }
         }
+        .options {
+          .mdi {
+            border: 1px solid $light-bg;
+            padding: 4px 6px;
+            border-radius: 14px;
+            transition: all .5s ease;
+            &:hover {
+              color: $accent;
+              border: 1px solid $accent;
+            }
+          }
+        }
         .close {
-          margin-top: -3px;
+          margin-bottom: -6px;
         }
       }
       .card-block {
@@ -118,9 +130,26 @@ $mdi-font-path: '~mdi/fonts/';
             padding: 6px 0 0 2px;
             margin: 0 4px 0;
           }
+          i {
+            background: $accent;
+            border-radius: 14px;
+            margin: 0 0 0 8px;
+            padding: 2px 6px;
+            transition: all .5s ease;
+            &:hover {
+              color: white;
+              background: $accent-hover;
+            }
+          }
         }
         .flatpickr {
           margin-bottom: 0;
+        }
+        .task-title {
+          margin: 2rem 1.5rem 1rem;
+          p {
+            color: $mute;
+          }
         }
         .comment-group {
           .comment {
@@ -154,19 +183,6 @@ $mdi-font-path: '~mdi/fonts/';
               &-input {
                 margin-right: .5rem;
               }
-            }
-          }
-        }
-        .add {
-          i {
-            background: $accent;
-            border-radius: 14px;
-            margin: 0 0 0 8px;
-            padding: 2px 6px;
-            transition: all .5s ease;
-            &:hover {
-              color: white;
-              background: $accent-hover;
             }
           }
         }

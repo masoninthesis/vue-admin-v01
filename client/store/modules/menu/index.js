@@ -12,17 +12,17 @@ import tables from './tables'
 const state = {
   items: [
     {
-      name: 'Dashboard',
+      name: 'My Tasks',
       path: '/dashboard',
       meta: {
-        icon: 'mdi-earth',
+        icon: 'mdi-star',
         link: 'dashboard/index.vue'
       },
       component: lazyLoading('dashboard', true)
     },
     {
-      name: 'Axios',
-      path: '/axiosDemo',
+      name: 'Recommended',
+      path: '/dashboard',
       meta: {
         auth: true,
         icon: 'mdi-rocket',
